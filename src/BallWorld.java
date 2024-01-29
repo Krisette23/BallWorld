@@ -19,7 +19,6 @@ import javax.swing.*;
 // Ball. Denna klass beskriver konceptet boll. En boll har en position
 // (givet av en koordinat (x,y)), en hastighet (givet av en
 // differential (dx,dy)) och en färg.
-
 class Ball {
     // Standardkonstanter (for alla instanser av Ball)
     static int        defaultDiameter  = 10;
@@ -120,7 +119,7 @@ class Ball {
         x = x + dx;
         y = y + dy;
 
-
+//diameter för bollen sjunker eller växer
         if(diameter<= minDiameter || diameter >= maxDiameter){
             shrink = !shrink;
         }
