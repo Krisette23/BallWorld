@@ -36,11 +36,11 @@ class Ball {
 
     //bollens min storlek
 
-    private int minDiameter;
+    private final int minDiameter;
 
     //bollens max storlek
 
-    private int maxDiameter;
+    private final int maxDiameter;
 
 // bollen krymper eller växer
 
@@ -152,15 +152,15 @@ class BallPanel extends JPanel implements ActionListener {
     private int width, height;
 
     // En boll
-    private Ball ball;
+    private final Ball ball;
 
     //andra boll
-    private Ball ball2;
+    private final Ball ball2;
 
     // Timer. Skickar en signal var 50e millisekund till panelen som
     // skickas med som ActionListener.
 
-    private Timer timer = new Timer(50, this);
+    private final Timer timer = new Timer(50, this);
 
     // Initiera attributen
     public BallPanel (int width, int height) {
@@ -246,7 +246,7 @@ class BallPanel extends JPanel implements ActionListener {
 public class BallWorld extends JFrame {
 
     // Skapa en panel
-    private BallPanel panel = new BallPanel (180, 180);
+    private final BallPanel panel = new BallPanel (180, 180);
 
     public BallWorld () {
 
@@ -263,7 +263,7 @@ public class BallWorld extends JFrame {
 
     // Denna metod startas av Javas virtuella maskin vid anropet java
     // BallWorld
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Detta kommando ger bättre animering i en del
         // OS. Avkommentera om bollen rör sig ryckigt.
         // System.setProperty("sun.java2d.opengl", "true");
