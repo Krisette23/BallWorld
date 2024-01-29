@@ -239,7 +239,7 @@ class BallPanel extends JPanel implements ActionListener {
 
 }
 
-
+//changes
 // Denna klass definierar det fönster som skapas av programmet. Ett
 // fönster (JFrame) skapas där en instans av BallPanel (ritytan)
 // placeras.
